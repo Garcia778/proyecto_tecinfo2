@@ -1,7 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const boton = document.getElementById("btnInteraccion");
+document.addEventListener('DOMContentLoaded', function() {
+    const boton = document.getElementById('miBoton');
 
-    boton.addEventListener("click", function () {
-        alert("Gracias por visitar nuestro proyecto sobre el Robo de Información.");
-    });
+    if (boton) {
+        boton.addEventListener('click', function() {
+            alert('¡Hola! Este es un botón interactivo.');
+        });
+    }
 });
