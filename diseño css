@@ -1,44 +1,89 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Robo de Información</title>
-    <link rel="stylesheet" href="diseño.css">
-    <script defer src="mi_script.js"></script>
-</head>
-<body>
+body {
+    background-color: lightgray;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    <!-- Marquesina -->
-    <marquee class="marquesina">TECNOLOGÍAS DE LA INFORMACIÓN II</marquee>
+header {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
 
-    <!-- Menú de navegación -->
-    <nav class="menu-navegacion">
-        <ul>
-            <li><a href="#">Bienvenid@</a></li>
-            <li><a href="#">Galería</a></li>
-            <li><a href="#">Información de Proyecto</a></li>
-            <li><a href="#">Quiénes somos</a></li>
-            <li><a href="#">Contactos</a></li>
-        </ul>
-    </nav>
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 
-    <!-- Contenido principal -->
-    <main class="portada">
-        <h1>Robo de Información</h1>
-        <p><strong>Integrantes del equipo:</strong></p>
-        <ul>
-            <li>Ilse Noemi Moreno Cruz</li>
-            <li>Jan Luca Gutierrez Diaz</li>
-            <li>Victor Gael Garcia Tellez</li>
-            <li>Paulina Sil Moreno</li>
-        </ul>
-        <p><strong>Universidad:</strong> UVM, Campus Lomas Verdes</p>
-        <p><strong>Docente:</strong> Mora Granados Beatriz Janet</p>
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-        <img src="imagen.jpg" alt="Imagen sobre robo de información" class="imagen-portada">
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
 
-        <button id="btnInteraccion">Haz clic para más información</button>
-    </main>
+main {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-</body>
-</html>
+#portada h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#portada img {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#portada h2 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#portada ul {
+    list-style: none;
+    padding: 0;
+}
+
+#portada ul li {
+    margin-bottom: 5px;
+}
+
+#portada p {
+    color: #555;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+#miBoton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#miBoton:hover {
+    background-color: #0056b3;
+}
