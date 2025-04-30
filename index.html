@@ -1,39 +1,84 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Robo de Información</title>
-    <link rel="stylesheet" href="diseño.css">
-    <script defer src="mi_script.js"></script>
-</head>
-<body>
-    <marquee class="marquesina">TECNOLOGÍAS DE LA INFORMACIÓN II</marquee>
+/* Estilo general */
+body {
+    background-color: #d3d3d3; /* Gris claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Bienvenid@</a></li>
-            <li><a href="#">Galería</a></li>
-            <li><a href="#">Información de Proyecto</a></li>
-            <li><a href="#">Quiénes somos</a></li>
-            <li><a href="#">Contactos</a></li>
-        </ul>
-    </nav>
+/* Marquesina */
+.marquesina {
+    background-color: #2c3e50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: bold;
+}
 
-    <header class="portada">
-        <h1>Robo de Información</h1>
-        <p><strong>Integrantes:</strong></p>
-        <ul>
-            <li>Ilse Noemi Moreno Cruz</li>
-            <li>Jan Luca Gutierrez Diaz</li>
-            <li>Victor Gael Garcia Tellez</li>
-            <li>Paulina Sil Moreno</li>
-        </ul>
-        <p><strong>Universidad:</strong> UVM, Lomas Verdes</p>
-        <p><strong>Docente:</strong> Mora Granados Beatriz Janet</p>
+/* Menú de navegación */
+.menu-navegacion ul {
+    list-style: none;
+    background-color: #34495e;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
 
-        <img src="imagen.jpg" alt="Imagen relacionada al robo de información" class="imagen-portada">
+.menu-navegacion ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
 
-        <button id="btnInteraccion">Haz clic aquí</button>
-    </header>
-</body>
-</html>
+.menu-navegacion ul li a:hover {
+    background-color: #1abc9c;
+    border-radius: 5px;
+}
+
+/* Portada principal */
+.portada {
+    text-align: center;
+    padding: 30px;
+}
+
+.portada h1 {
+    font-size: 36px;
+    color: #2c3e50;
+}
+
+.portada ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.portada li {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.imagen-portada {
+    margin-top: 20px;
+    max-width: 300px;
+    border: 3px solid #34495e;
+    border-radius: 10px;
+}
+
+/* Botón interactivo */
+#btnInteraccion {
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btnInteraccion:hover {
+    background-color: #1abc9c;
+}
