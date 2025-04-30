@@ -1,57 +1,44 @@
-body {
-    background-color: #d3d3d3; /* gris claro */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Robo de Información</title>
+    <link rel="stylesheet" href="diseño.css">
+    <script defer src="mi_script.js"></script>
+</head>
+<body>
 
-.marquesina {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    font-weight: bold;
-}
+    <!-- Marquesina -->
+    <marquee class="marquesina">TECNOLOGÍAS DE LA INFORMACIÓN II</marquee>
 
-.menu ul {
-    list-style-type: none;
-    background-color: #444;
-    padding: 10px;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-}
+    <!-- Menú de navegación -->
+    <nav class="menu-navegacion">
+        <ul>
+            <li><a href="#">Bienvenid@</a></li>
+            <li><a href="#">Galería</a></li>
+            <li><a href="#">Información de Proyecto</a></li>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </nav>
 
-.menu ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-}
+    <!-- Contenido principal -->
+    <main class="portada">
+        <h1>Robo de Información</h1>
+        <p><strong>Integrantes del equipo:</strong></p>
+        <ul>
+            <li>Ilse Noemi Moreno Cruz</li>
+            <li>Jan Luca Gutierrez Diaz</li>
+            <li>Victor Gael Garcia Tellez</li>
+            <li>Paulina Sil Moreno</li>
+        </ul>
+        <p><strong>Universidad:</strong> UVM, Campus Lomas Verdes</p>
+        <p><strong>Docente:</strong> Mora Granados Beatriz Janet</p>
 
-.menu ul li a:hover {
-    background-color: #666;
-}
+        <img src="imagen.jpg" alt="Imagen sobre robo de información" class="imagen-portada">
 
-.portada {
-    text-align: center;
-    padding: 30px;
-}
+        <button id="btnInteraccion">Haz clic para más información</button>
+    </main>
 
-.imagen-portada {
-    max-width: 300px;
-    margin-top: 20px;
-    border: 2px solid #555;
-    border-radius: 10px;
-}
-
-#btnInteraccion {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#btnInteraccion:hover {
-    background-color: #007BFF;
-    color: white;
-}
+</body>
+</html>
